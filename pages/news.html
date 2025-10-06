@@ -1,68 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Новости</title>
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <header class="header">
-                <h1>Новости</h1>
-            </header>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Новости</h1>
+        </header>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+                <li class="nav__item"><a class="nav__link" href="goods.html">Товары</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
 
-            <main class="content">
-                <section class="news-container">
-                    <h2 class="section-title">Последние новости</h2>
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Ваще ракета!</h2>
-                            <p class="news-meta">27.01.2025 18:23 | Автор: С.В. Астафьев</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">NHTSA разбил Кибертрак на пять звёзд.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Обновление дизайна</h2>
-                            <p class="news-meta">17.01.2025 10:03 | Автор: Г.Е. Цидармяков</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text"> Представляем вашему вниманию обновленный дизайн нашего портала. Мы 
+        <main class="content">
+            <section class="news">
+                <h2 class="news__title">Последние новости</h2>
+                <article class="news__card">
+                    <header class="news__header">
+                        <h3 class="news__card-title">Ваще ракета!</h3>
+                        <p class="news__meta">27.01.2025 18:23 | Автор: С.В. Астафьев</p>
+                    </header>
+                    <div class="news__content">
+                        <p class="news__text">NHTSA разбил Кибертрак на пять звёзд.</p>
+                        <a href="#" class="news__link">Читать далее...</a>
+                    </div>
+                </article>
+                <article class="news__card">
+                    <header class="news__header">
+                        <h3 class="news__card-title">Обновление дизайна</h3>
+                        <p class="news__meta">17.01.2025 10:03 | Автор: Г.Е. Цидармяков</p>
+                    </header>
+                    <div class="news__content">
+                        <p class="news__text">Представляем вашему вниманию обновленный дизайн нашего портала. Мы 
 улучшили пользовательский опыт и добавили новые функции для вашего 
 удобства.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Новые возможности</h2>
-                            <p class="news-meta">05.01.2025 14:10 | Автор: Р.У. Гаников</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text"> Расширяем функциональность платформы. Теперь доступны новые инструменты 
+                        <a href="#" class="news__link">Читать далее...</a>
+                    </div>
+                </article>
+                <article class="news__card">
+                    <header class="news__header">
+                        <h3 class="news__card-title">Новые возможности</h3>
+                        <p class="news__meta">05.01.2025 14:10 | Автор: Р.У. Гаников</p>
+                    </header>
+                    <div class="news__content">
+                        <p class="news__text">Расширяем функциональность платформы. Теперь доступны новые инструменты 
 для разработки и тестирования веб-приложений.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
-                </section>
-            </main>
-            <footer class="footer">
-                <p>Футер</p>
-            </footer>    
-        </div>
-    
-</body></html>
+                        <a href="#" class="news__link">Читать далее...</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">Футер</p>
+        </footer>    
+    </div>
+</body>
+</html>

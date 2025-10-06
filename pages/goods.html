@@ -1,71 +1,70 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Товары</title>
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <header class="header">
-                <h1>Наши товары</h1>
-            </header>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-            <main class="content">
-                <section class="products-section">
-                    <h2 class="section-title">Каталог товаров</h2>
-                    <div class="products-grid">
-                        <article class="product-card">
-                            <div class="product-image-container">
-                                <img class="product-image" src="../images/goods1.jpeg">
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-name">Производительный ноутбук</h3>
-                                <p class="product-description">Мощный ноутбук для работы, учебы и развлечений с современными характеристиками</p>
-                                <p class="product-price">85 990 ₽</p>
-                                <button class="product-button">В корзину</button>
-                            </div>
-                        </article>
-                        
-                        <article class="product-card">
-                            <div class="product-image-container">
-                                <img class="product-image" src="../images/goods2.jpeg">
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-name">Флагманский смартфон</h3>
-                                <p class="product-description">Инновационный смартфон с лучшей камерой и производительностью на рынке</p>
-                                <p class="product-price">64 990 ₽</p>
-                                <button class="product-button">В корзину</button>
-                            </div>
-                        </article>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Наши товары</h1>
+        </header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="goods.html">Товары</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section class="products-section">
+                <h2 class="products-section__title">Каталог товаров</h2>
+                <div class="products">
+                    <article class="products__card">
+                        <div class="products__image-container">
+                            <img class="products__image" src="../images/goods1.jpeg" alt="Производительный ноутбук">
+                        </div>
+                        <div class="products__info">
+                            <h3 class="products__name">Производительный ноутбук</h3>
+                            <p class="products__description">Мощный ноутбук для работы, учебы и развлечений с современными характеристиками</p>
+                            <p class="products__price">85 990 ₽</p>
+                            <button class="products__button">В корзину</button>
+                        </div>
+                    </article>
+                    
+                    <article class="products__card">
+                        <div class="products__image-container">
+                            <img class="products__image" src="../images/goods2.jpeg" alt="Флагманский смартфон">
+                        </div>
+                        <div class="products__info">
+                            <h3 class="products__name">Флагманский смартфон</h3>
+                            <p class="products__description">Инновационный смартфон с лучшей камерой и производительностью на рынке</p>
+                            <p class="products__price">64 990 ₽</p>
+                            <button class="products__button">В корзину</button>
+                        </div>
+                    </article>
 
-                        <article class="product-card">
-                            <div class="product-image-container">
-                                <img class="product-image" src="../images/goods3.jpeg">
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-name">Беспроводные наушники</h3>
-                                <p class="product-description">Качественные наушники с шумоподавлением и длительным временем работы</p>
-                                <p class="product-price">12 990 ₽</p>
-                                <button class="product-button">В корзину</button>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </main>
-
-            <footer class="footer">
-                <p>Футер</p>
-            </footer>    
-        </div>
-    
-</body></html>
+                    <article class="products__card">
+                        <div class="products__image-container">
+                            <img class="products__image" src="../images/goods3.jpeg" alt="Беспроводные наушники">
+                        </div>
+                        <div class="products__info">
+                            <h3 class="products__name">Беспроводные наушники</h3>
+                            <p class="products__description">Качественные наушники с шумоподавлением и длительным временем работы</p>
+                            <p class="products__price">12 990 ₽</p>
+                            <button class="products__button">В корзину</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">Футер</p>
+        </footer>    
+    </div>
+</body>
+</html>
