@@ -1,68 +1,126 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Новости</title>
-    <link rel="stylesheet" href="../style/style.css">
-</head>
-<body>
-    <div class="page">
-        <header class="header">
-            <h1 class="header__title">Новости</h1>
-        </header>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid p-0">
+      <header class="text-white py-4" style="background: linear-gradient(135deg, #8698d3, #6851c2);">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <h1 class="h3 mb-1">Новости</h1>
+            </div>
+            <div class="col-auto">
+              <span class="badge bg-light text-dark">ЭФБО-08-24</span>
+            </div>
+          </div>
+        </div>
+      </header>
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
-                <li class="nav__item"><a class="nav__link nav__link--active" href="news.html">Новости</a></li>
-                <li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
-                <li class="nav__item"><a class="nav__link" href="goods.html">Товары</a></li>
-                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+      <!-- Navbar Content -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavЦ">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">
+                  <i class="bi bi-house me-1"></i>
+                  Главная
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="news.html">
+                  <i class="bi bi-newspaper me-1"></i>
+                  Новости
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="goods.html">
+                  <i class="bi bi-cart me-1"></i>
+                  Товары
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacts.html">
+                  <i class="bi bi-telephone me-1"></i>
+                  Контакты
+                </a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
 
-        <main class="content">
-            <section class="news">
-                <h2 class="news__title">Последние новости</h2>
-                <article class="news__card">
-                    <header class="news__header">
-                        <h3 class="news__card-title">Ваще ракета!</h3>
-                        <p class="news__meta">27.01.2025 18:23 | Автор: С.В. Астафьев</p>
-                    </header>
-                    <div class="news__content">
-                        <p class="news__text">NHTSA разбил Кибертрак на пять звёзд.</p>
-                        <a href="#" class="news__link">Читать далее...</a>
+      <!-- Goods Content -->
+      <main class="container my-4">
+        
+        <!-- Goods Section -->
+        <section class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    <h3 class="card-title h5 mb-0">
+                        <i class="bi bi-newspaper" style="color: #7775cb"></i>
+                        Последние новости
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="col g-3">
+                        <div class="card h-100 p-3 mb-3">
+                            <div class="card-body p-0 pt-3">
+                              <h5 class="card-title h3"><b>Ваще ракета!</b></h5>
+                                <p class="card-text small text-muted fs-6 mb-3">27.01.2025 18:23 | Автор: С.В. Астафьев</p>
+                                <p class="card-text fs-5">NHTSA разбил Кибертрак на пять звёзд.</p>
+                                <a href="">Читать далее...</a>
+                            </div>
+                        </div>
+                        <div class="card h-100 p-3 mb-3">
+                            <div class="card-body p-0 pt-3">
+                              <h5 class="card-title h3"><b>Обновление дизайна</b></h5>
+                                <p class="card-text small text-muted fs-6 mb-3">17.01.2025 10:03 | Автор: Г.Е. Цидармяков</p>
+                                <p class="card-text fs-5">Представляем вашему вниманию обновленный дизайн нашего портала. Мы улучшили пользовательский опыт и добавили новые функции для вашего удобства.</p>
+                                <a href="">Читать далее...</a>
+                            </div>
+                        </div>
+                        <div class="card h-100 p-3 mb-3">
+                            <div class="card-body p-0 pt-3">
+                              <h5 class="card-title h3"><b>Новые возможности</b></h5>
+                                <p class="card-text small text-muted fs-6 mb-3">05.01.2025 14:10 | Автор: Р.У. Гаников</p>
+                                <p class="card-text fs-5">Расширяем функциональность платформы. Теперь доступны новые инструменты для разработки и тестирования веб-приложений.</p>
+                                <a href="">Читать далее...</a>
+                            </div>
+                        </div>
+                        
+                   
+                        
                     </div>
-                </article>
-                <article class="news__card">
-                    <header class="news__header">
-                        <h3 class="news__card-title">Обновление дизайна</h3>
-                        <p class="news__meta">17.01.2025 10:03 | Автор: Г.Е. Цидармяков</p>
-                    </header>
-                    <div class="news__content">
-                        <p class="news__text">Представляем вашему вниманию обновленный дизайн нашего портала. Мы 
-улучшили пользовательский опыт и добавили новые функции для вашего 
-удобства.</p>
-                        <a href="#" class="news__link">Читать далее...</a>
-                    </div>
-                </article>
-                <article class="news__card">
-                    <header class="news__header">
-                        <h3 class="news__card-title">Новые возможности</h3>
-                        <p class="news__meta">05.01.2025 14:10 | Автор: Р.У. Гаников</p>
-                    </header>
-                    <div class="news__content">
-                        <p class="news__text">Расширяем функциональность платформы. Теперь доступны новые инструменты 
-для разработки и тестирования веб-приложений.</p>
-                        <a href="#" class="news__link">Читать далее...</a>
-                    </div>
-                </article>
-            </section>
+                </div>
+            </div>
+        </section>
         </main>
-        <footer class="footer">
-            <p class="footer__text">Футер</p>
-        </footer>    
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4 mt-5 fixed-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2025 Портфолио студента. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="pages/contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-</body>
+  </body>
 </html>

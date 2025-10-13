@@ -8,7 +8,7 @@ body {
 
 /* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
 .page {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
     background: white;
     min-height: 100vh;
@@ -19,7 +19,7 @@ body {
 .header {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 30px;
     font-size: 28px;
     font-weight: 300;
